@@ -1,0 +1,28 @@
+# Never version these, regardless of the allowlist below
+.api_key
+credentials.json
+secrets/
+*.key
+*.pem
+auth.json
+*.token
+
+# Ignore everything by default — this is an allowlist, not a denylist.
+# Anything not explicitly un-ignored below (runtime state, caches, IDE
+# lock files with live auth tokens, telemetry, etc.) stays untracked.
+*
+
+# Always version these (explicit allowlist)
+!.gitignore
+!CLAUDE.md
+!settings.json
+!commands/
+!commands/**
+!skills/
+!skills/**
+!hooks/
+!hooks/**
+!agents/
+!agents/**
+!rules/
+!rules/**
