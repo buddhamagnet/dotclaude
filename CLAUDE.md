@@ -1,0 +1,1 @@
+After every completed task, teach me a new word in Mandarin - give me the pinyin, the hanzi, the pronunciation, and an example sentence.
