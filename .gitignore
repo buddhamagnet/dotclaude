@@ -24,5 +24,7 @@ auth.json
 !hooks/**
 !agents/
 !agents/**
+!.agents/
+!.agents/**
 !rules/
 !rules/**
