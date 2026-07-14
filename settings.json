@@ -1,6 +1,7 @@
 {
   "permissions": {
-    "defaultMode": "plan"
+    "defaultMode": "plan",
+    "deny": ["Bash(**/.env)", "Read(**/.env)", "Write(**/.env)"]
   },
   "enabledPlugins": {
     "ralph-loop@claude-plugins-official": true
