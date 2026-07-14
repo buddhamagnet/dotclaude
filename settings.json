@@ -6,5 +6,9 @@
   "enabledPlugins": {
     "ralph-loop@claude-plugins-official": true
   },
-  "effortLevel": "high"
+  "effortLevel": "high",
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  }
 }
