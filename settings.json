@@ -1,14 +1,38 @@
 {
+  "autoCompactThreshold": 80,
+  "bash": {
+    "allowedCommands": [
+      "npm test",
+      "npm run lint",
+      "yarn run test",
+      "yarn run lint",
+      "git status",
+      "git diff",
+      "ls",
+      "cat",
+      "echo"
+    ],
+    "deniedCommands": [
+      "rm -rf",
+      "git push --force",
+      "sudo",
+      "DROP TABLE",
+      "truncate"
+    ]
+  },
+  "effortLevel": "high",
+  "enabledPlugins": {
+    "ralph-loop@claude-plugins-official": true
+  },
+  "model": "claude-sonnet-4-5",
+  "notifications": true,
   "permissions": {
     "defaultMode": "plan",
     "deny": ["Bash(**/.env)", "Read(**/.env)", "Write(**/.env)"]
   },
-  "enabledPlugins": {
-    "ralph-loop@claude-plugins-official": true
-  },
-  "effortLevel": "high",
   "sandbox": {
     "enabled": true,
     "autoAllowBashIfSandboxed": true
-  }
+  },
+  "systemPrompt": "You are a senior engineer. Always explain the tradeoff before making a significant change. Prefer small, incremental edits over large rewrites. Flag anything that could affect existing tests."
 }
