@@ -1,0 +1,1 @@
+Why is the .agents folder ignored in this repo. I installed the systematic-debugging skill which was installed under .agents why is this ignored? I ask as I push these changes to Github so I can clone on a new machine.
