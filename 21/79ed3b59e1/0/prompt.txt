@@ -1,0 +1,9 @@
+~ cd /Users/buddhamagnet/.claude && npm run auth
+npm error code ENOENT
+npm error syscall open
+npm error path /Users/buddhamagnet/.claude/package.json
+npm error errno -2
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/Users/buddhamagnet/.claude/package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: /Users/buddhamagnet/.npm/_logs/2026-07-21T14_49_47_522Z-debug-0.log
