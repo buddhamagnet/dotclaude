@@ -1,0 +1,9 @@
+Base directory for this skill: /Users/buddhamagnet/.claude/skills/parse-aigc-metadata
+
+The user will give you a list of filenames, for each one run:
+
+```strings <filename> | grep -A1 "xpot\|cacdga.go\|aigc"``
+
+And explain the metadata in a concise fashion. Do not give the user the normal Mandarin word at the end.
+
+ARGUMENTS: ~/Desktop/video.mp4
