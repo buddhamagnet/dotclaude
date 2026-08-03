@@ -1,4 +1,22 @@
 {
+  "permissions": {
+    "deny": [
+      "Bash(**/.env)",
+      "Read(**/.env)",
+      "Write(**/.env)"
+    ],
+    "defaultMode": "plan"
+  },
+  "model": "claude-sonnet-4-5",
+  "enabledPlugins": {
+    "ralph-loop@claude-plugins-official": true,
+    "rust-analyzer-lsp@claude-plugins-official": true
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  },
+  "effortLevel": "high",
   "autoCompactThreshold": 80,
   "bash": {
     "allowedCommands": [
@@ -20,19 +38,6 @@
       "truncate"
     ]
   },
-  "effortLevel": "high",
-  "enabledPlugins": {
-    "ralph-loop@claude-plugins-official": true
-  },
-  "model": "claude-sonnet-4-5",
   "notifications": true,
-  "permissions": {
-    "defaultMode": "plan",
-    "deny": ["Bash(**/.env)", "Read(**/.env)", "Write(**/.env)"]
-  },
-  "sandbox": {
-    "enabled": true,
-    "autoAllowBashIfSandboxed": true
-  },
   "systemPrompt": "You are a senior engineer. Always explain the tradeoff before making a significant change. Prefer small, incremental edits over large rewrites. Flag anything that could affect existing tests."
 }
