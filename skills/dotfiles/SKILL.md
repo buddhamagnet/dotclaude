@@ -7,6 +7,15 @@ description: Manage dotfiles repository - add new tools, configure shell integra
 
 This skill helps you work with buddhamagnet's dotfiles repository located at `/Users/buddhamagnet/Code/dotfiles`.
 
+## ⚠️ Pending Tasks
+
+**fzf optimization**: Consider configuring fzf to use ripgrep and fd for better performance:
+- Add `FZF_DEFAULT_COMMAND` to use fd instead of find
+- Add `FZF_CTRL_T_COMMAND` for file finder
+- Add `FZF_ALT_C_COMMAND` for directory finder
+- Benefits: faster, respects .gitignore, colored output
+- Files to update: zshrc, bashrc, nushell/env.nu
+
 ## Repository Overview
 
 **Location**: `/Users/buddhamagnet/Code/dotfiles`
@@ -35,7 +44,18 @@ Tools installed via the Rust installer:
 - **Starship** - Official curl installer
 - **Carapace** - Homebrew package
 - **Worktrunk** - Homebrew package
-- **Catppuccin tmux plugin** - Git clone at pinned tag
+- **zoxide** - Homebrew package
+- **fzf** - Homebrew package
+- **ripgrep** - Homebrew package (used by telescope live_grep in neovim)
+- **fd** - Homebrew package (used by telescope file finder in neovim)
+- **tpm** - Git clone at pinned tag (tmux plugin manager)
+- **tpm plugins** - Installed via tpm (catppuccin, tmux-cpu)
+
+Neovim plugins (managed via lazy.nvim in nvim/lua/plugins/init.lua):
+- **lazy.nvim** - Plugin manager (auto-bootstrapped)
+- **catppuccin** - Color theme (mocha variant)
+- **telescope** - Fuzzy finder with fzf-native extension
+- **plenary** - Lua utility library (telescope dependency)
 
 ## Adding a New Tool
 
