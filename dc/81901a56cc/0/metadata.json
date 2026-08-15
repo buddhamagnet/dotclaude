@@ -1,0 +1,55 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "dc81901a56cc",
+  "session_id": "e0e4ec34-1856-48f3-9885-82db8e0d3148",
+  "strategy": "manual-commit",
+  "created_at": "2026-08-15T10:23:53.076677Z",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "save_step_count": 1,
+  "files_touched": [
+    "agents/UnixOps.md"
+  ],
+  "agent": "Claude Code",
+  "model": "",
+  "turn_id": "bbf4e2f40fb3",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 150,
+    "cache_creation_tokens": 69940,
+    "cache_read_tokens": 549366,
+    "output_tokens": 5644,
+    "api_call_count": 17
+  },
+  "session_metrics": {
+    "turn_count": 2
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-08-15T10:23:53.056806Z",
+    "agent_lines": 9,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 9,
+    "total_lines_changed": 9,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 9,
+      "agent_lines_removed": 0
+    }
+  ]
+}
