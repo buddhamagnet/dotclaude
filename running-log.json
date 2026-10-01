@@ -1,0 +1,19 @@
+{
+  "runs": [
+    {
+      "date": "2026-10-01",
+      "time": "16:00",
+      "location": "Dorking Road",
+      "shoes": "road",
+      "food": "cheese sandwich with lettuce, tomato and cucumber",
+      "distance": 2.7,
+      "distance_unit": "km",
+      "hydration": "low",
+      "pain": 1
+    }
+  ],
+  "metadata": {
+    "created": "2026-10-01",
+    "total_entries": 1
+  }
+}
