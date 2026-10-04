@@ -10,10 +10,22 @@
       "distance_unit": "km",
       "hydration": "low",
       "pain": 1
+    },
+    {
+      "date": "2026-10-04",
+      "time": "15:00",
+      "location": "Buckland Park Lake",
+      "shoes": "trail",
+      "food": "peanut butter and banana sandwich and a protein bar",
+      "distance": 2.69,
+      "distance_unit": "km",
+      "hydration": "medium",
+      "pain": 0,
+      "notes": "Did a 13k walk yesterday"
     }
   ],
   "metadata": {
     "created": "2026-10-01",
-    "total_entries": 1
+    "total_entries": 2
   }
 }
