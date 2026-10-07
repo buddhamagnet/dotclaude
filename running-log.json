@@ -22,10 +22,22 @@
       "hydration": "medium",
       "pain": 0,
       "notes": "Did a 13k walk yesterday"
+    },
+    {
+      "date": "2026-10-07",
+      "time": "16:00",
+      "location": "Buckland Park Lake",
+      "shoes": "trail",
+      "food": "peanut butter and banana sandwich",
+      "distance": 2.79,
+      "distance_unit": "km",
+      "hydration": "medium",
+      "pain": 6,
+      "notes": "2 days rest before this run, only did light yoga"
     }
   ],
   "metadata": {
     "created": "2026-10-01",
-    "total_entries": 2
+    "total_entries": 3
   }
 }
