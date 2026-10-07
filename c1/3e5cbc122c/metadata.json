@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "c13e5cbc122c",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 21,
+  "files_touched": [
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/.last-complete-round",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/built-in-browser/LICENSE.txt",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/built-in-browser/SKILL.md",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/chrome-browser/LICENSE.txt",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/chrome-browser/SKILL.md",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/computer-use/LICENSE.txt",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/computer-use/SKILL.md",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/deep-research/SKILL.md",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/deep-research/references/report-writer.md",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/deep-research/references/researcher.md",
+    "skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/manifest.json"
+  ],
+  "sessions": [
+    {
+      "metadata": "/c1/3e5cbc122c/0/metadata.json",
+      "transcript": "/c1/3e5cbc122c/0/full.jsonl",
+      "compact_transcript": "/c1/3e5cbc122c/0/transcript.jsonl",
+      "content_hash": "/c1/3e5cbc122c/0/content_hash.txt",
+      "prompt": "/c1/3e5cbc122c/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 506,
+    "cache_creation_tokens": 72640,
+    "cache_read_tokens": 3417517,
+    "output_tokens": 25015,
+    "api_call_count": 58
+  }
+}
