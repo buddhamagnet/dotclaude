@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "created": "2026-10-26",
+    "total_tips": 3,
+    "last_added": "2026-10-26",
+    "category_counts": {
+      "Parameter Expansion": 1,
+      "Conditionals & Tests": 1,
+      "Error Handling": 1
+    }
+  },
+  "tips": [
+    {
+      "id": "param-expansion-default",
+      "category": "Parameter Expansion",
+      "title": "Use Default Value",
+      "syntax": "${var:-default}",
+      "explanation": "Returns the value of var if set and not null, otherwise returns default. The variable itself is not modified.",
+      "example": "name=${1:-\"guest\"}\necho \"Hello, $name\"",
+      "why": "Prevents errors from unset variables and provides sensible defaults without if/else blocks. Cleaner than: if [ -z \"$1\" ]; then name=\"guest\"; fi",
+      "added": "2026-10-26T11:45:00Z"
+    },
+    {
+      "id": "test-double-bracket",
+      "category": "Conditionals & Tests",
+      "title": "Prefer [[ ]] Over [ ]",
+      "syntax": "[[ condition ]]",
+      "explanation": "Double brackets provide safer testing with no word splitting, no glob expansion, and support for && || operators and regex matching with =~.",
+      "example": "[[ $file == *.txt ]] && echo \"Text file\"\n[[ $count -gt 10 && $status == \"ready\" ]]",
+      "why": "Prevents quote-related bugs that plague single brackets. Pattern matching works naturally without quotes. Much safer for variable testing.",
+      "added": "2026-10-26T11:46:00Z"
+    },
+    {
+      "id": "error-exit-on-error",
+      "category": "Error Handling",
+      "title": "Exit on Error",
+      "syntax": "set -e",
+      "explanation": "Exit immediately if any command fails (returns non-zero). Add at the start of scripts to prevent cascading failures from unnoticed errors.",
+      "example": "#!/bin/bash\nset -e\ncd /nonexistent  # Script stops here\necho \"Never reached\"",
+      "why": "Catches errors early before they compound. Without this, failed commands silently continue and cause confusing downstream issues. Essential for production scripts.",
+      "added": "2026-10-26T11:47:00Z"
+    }
+  ]
+}
