@@ -1,0 +1,73 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "60d70a71cb14",
+  "session_id": "7794b67e-dd59-4d6e-87dd-91a22a705fac",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-29T17:11:43.656571Z",
+  "branch": "main",
+  "checkpoints_count": 3,
+  "save_step_count": 1,
+  "files_touched": [
+    ".gitignore"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-4-5-20250929",
+  "turn_id": "19fb79aa60a0",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 237,
+    "cache_creation_tokens": 75829,
+    "cache_read_tokens": 1553404,
+    "output_tokens": 17983,
+    "api_call_count": 27
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01KV4WS3b7zYNKdapP5UCmgz",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "rust-idiomatic"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "19fb79aa60a0",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 188,
+        "end": 189,
+        "entry_ids": [
+          "9c23dc53-f54b-481f-a666-4bb5363ffcf8"
+        ],
+        "tool_use_id": "toolu_01KV4WS3b7zYNKdapP5UCmgz"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01KV4WS3b7zYNKdapP5UCmgz"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: rust-idiomatic",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 7
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-29T17:11:43.598562Z",
+    "agent_lines": 1,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 1,
+    "total_lines_changed": 1,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}
