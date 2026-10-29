@@ -1,0 +1,177 @@
+Create a skill I can use when writing Rust to ensure code is idiomatic, makes good use of the standard library and is clean. When the skill loads ask me if there are any useful links you can scrape and add to your knowledge matrix. Use DocRabbit to double check with current Rust docs to prevent stale data. Here is the first link https://corrode.dev/blog/ugly/
+
+---
+
+<task-notification>
+<task-id>a04754f4dc710ef55</task-id>
+<tool-use-id>toolu_01HyuGNVxmaTJi8piaRiZPNS</tool-use-id>
+<output-file>/private/tmp/claude-501/-Users-buddhamagnet--claude/7794b67e-dd59-4d6e-87dd-91a22a705fac/tasks/a04754f4dc710ef55.output</output-file>
+<status>completed</status>
+<summary>Agent "Find skill structure patterns" finished</summary>
+<note>A task-notification fires each time this agent stops with no live background children of its own. The user can send it another message and resume it, so the same task-id may notify more than once.</note>
+<result>Perfect! I've thoroughly examined the `.claude/skills` directory and found excellent examples. Let me summarize my findings.
+
+## Key Findings
+
+### 1. Standard Structure of a Skill File
+
+Every skill follows this pattern:
+
+**YAML Frontmatter:**
+```yaml
+---
+name: skill-name
+description: Detailed description including WHAT it does AND WHEN to trigger
+allowed-tools: (optional) Tool access patterns
+hidden: (optional) Boolean
+compatibility: (optional) Required environments/tools
+license: (optional) License info
+---
+```
+
+**Markdown Body:**
+- Main heading (# Skill Name)
+- Overview/introduction section
+- Clear step-by-step instructions with ## headings
+- Examples and patterns
+- Optional references to bundled resources
+
+**Directory Structure:**
+```
+skill-name/
+├── SKILL.md (required)
+├── references/ (optional - docs loaded as needed)
+├── scripts/ (optional - executable code)
+└── assets/ (optional - templates, files)
+```
+
+### 2. Code Review/Quality Patterns
+
+The **systematic-debugging** skill is an excellent example of a quality-checking skill:
+
+- **Structured phases**: Clear Phase 1, 2, 3, 4 progression
+- **"When to Use" section**: Explicit triggers and contexts
+- **Strong guardrails**: "Red Flags" section, "Iron Law" rules
+- **Process-oriented**: Emphasizes investigation before fixes
+- **Supporting files**: References other `.md` files in the skill directory (`root-cause-tracing.md`, `defense-in-depth.md`)
+
+Key sections from systematic-debugging:
+- Overview with core principles
+- "The Iron Law" (clear rule)
+- "When to Use" with specific scenarios
+- Multi-phase process (4 phases, must complete each)
+- Red flags and common rationalizations
+- Quick reference table
+
+### 3. Patterns for Asking Questions When Skill Loads
+
+**deep-research** skill shows this pattern:
+
+```markdown
+## Process
+
+1. [If necessary] Ask the user follow up questions
+2. [Next step]
+3. [Next step]
+
+### 1. [If necessary] Ask the user follow up questions
+
+Read the user's question and consider if there are any missing or ambiguous details...
+
+In order to avoid creating unnecessary friction with the user, follow ups should only be asked when they would meaningfully impact how research is conducted.
+
+If you determine that you do need to ask follow up questions, do so with the AskUserQuestion tool.
+```
+
+**skill-creator** uses an interview approach:
+
+```markdown
+### Capture Intent
+
+Start by understanding the user's intent...
+
+1. What should this skill enable Claude to do?
+2. When should this skill trigger?
+3. What's the expected output format?
+4. Should we set up test cases?
+```
+
+### 4. Critical Metadata Conventions
+
+**Description field** - Most important for triggering:
+- Should be "pushy" to combat undertriggering
+- Include both WHAT and WHEN
+- List specific user phrases and contexts
+- Example: "Use this skill whenever..." followed by comprehensive triggers
+
+**allowed-tools** examples:
+- `Bash(pattern:*)` - any bash command
+- `Bash(agent-browser:*)` - specific prefix
+- `Read(pattern:*)`, `Write(pattern:*)`, `Edit(pattern:*)`
+- `AskUserQuestion(pattern:*)`
+
+### 5. Three Good Example Files
+
+**For your reference, here are the paths to three excellent examples:**
+
+1. **/Users/buddhamagnet/.claude/skills/systematic-debugging/SKILL.md** - Comprehensive code review/quality checking skill with phases, red flags, and strict process
+2. **/Users/buddhamagnet/.claude/skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/deep-research/SKILL.md** - Multi-step workflow that asks questions conditionally
+3. **/Users/buddhamagnet/.claude/skills/synced/9fc194aa-f6a3-4616-8389-3f274803b73b_e416baa7-d7c2-41b8-8167-1847d1814f07/skill-creator/SKILL.md** - Meta-skill for creating skills, shows interview patterns and comprehensive structure
+
+Each demonstrates different aspects: systematic-debugging shows quality checking patterns, deep-research shows conditional questioning, and skill-creator shows the complete anatomy of a well-structured skill.</result>
+<usage><subagent_tokens>42937</subagent_tokens><tool_uses>11</tool_uses><duration_ms>495497</duration_ms></usage>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>a8143c63d592ceb04</task-id>
+<tool-use-id>REDACTED</tool-use-id>
+<output-file>/private/tmp/claude-501/-Users-buddhamagnet--claude/7794b67e-dd59-4d6e-87dd-91a22a705fac/tasks/a8143c63d592ceb04.output</output-file>
+<status>completed</status>
+<summary>Agent "Check for Rust-related content" finished</summary>
+<note>A task-notification fires each time this agent stops with no live background children of its own. The user can send it another message and resume it, so the same task-id may notify more than once.</note>
+<result>## Rust-Related Content Search Results
+
+**Existing Rust Skills:**
+- `/Users/buddhamagnet/.claude/skills/dotfiles/SKILL.md` - Manages dotfiles repository with a Rust-based CLI installer at `/Users/buddhamagnet/Code/dotfiles/src/main.rs`
+
+**Rust Projects Found:**
+- `/Users/buddhamagnet/Code/dotfiles/` - Dotfiles installer (Cargo project)
+- `/Users/buddhamagnet/Code/rust/rust-course/` - Multiple learning projects including warehouse, iterators, smart-pointers, generics, error-handling, strings, hash-maps, etc.
+
+**Rust Tooling Status:**
+- `rustc` - Installed at `/Users/buddhamagnet/.cargo/bin/rustc`
+- `cargo` - Installed at `/Users/buddhamagnet/.cargo/bin/cargo`
+- `rustfmt` - Installed at `/Users/buddhamagnet/.cargo/bin/rustfmt`
+- `clippy` - **NOT installed**
+- `rust-analyzer-lsp` plugin - **Enabled** in settings.json
+
+**Code Quality Patterns:**
+- Code-review plugin exists in `/Users/buddhamagnet/.claude/plugins/marketplaces/claude-plugins-official/plugins/code-review/` but it's generic, not Rust-specific
+- Settings.json has allowedCommands for `npm run lint` and `yarn run lint` but no Rust equivalents
+- No existing skills for Rust linting, formatting, or code quality
+
+**Configuration Files:**
+- **No clippy.toml or rustfmt.toml files** found in any Rust projects
+- **No rust-toolchain files** found
+- Standard Cargo.toml files exist but without linting configuration
+
+**Gaps Identified:**
+1. No Rust-specific linting or quality checking skills
+2. Clippy is not installed
+3. No automated Rust code quality workflows
+4. No rustfmt or clippy configuration files in projects
+5. No allowed bash commands for `cargo clippy` or `cargo fmt`
+
+新词 (xīn cí) - New word
+拼音 (pīnyīn): chè dǐ (che-dee)
+汉字: 彻底
+意思: Thorough, complete, exhaustive
+例句: 我们做了彻底的调查。(Wǒmen zuòle chèdǐ de diàochá.) - We conducted a thorough investigation.</result>
+<usage><subagent_tokens>44343</subagent_tokens><tool_uses>46</tool_uses><duration_ms>1229422</duration_ms></usage>
+</task-notification>
+
+---
+
+Where does the content from the supplied links get stored
