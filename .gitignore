@@ -23,6 +23,7 @@ auth.json
 !commands/**
 !skills/
 !skills/**
+skills/synced/
 !hooks/
 !hooks/**
 !agents/
