@@ -1,0 +1,109 @@
+{
+  "cli_version": "0.8.42",
+  "checkpoint_id": "6c3493ea9c0c",
+  "session_id": "38e8f230-8ca0-41dd-9243-1d5097b1444d",
+  "strategy": "manual-commit",
+  "created_at": "2026-11-11T12:56:29.136744Z",
+  "branch": "main",
+  "checkpoints_count": 6,
+  "save_step_count": 7,
+  "files_touched": [
+    "settings.json",
+    "skills/arc/references/user-notes.md"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "a6313ebddf65",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 60,
+    "cache_creation_tokens": 61933,
+    "cache_read_tokens": 1515654,
+    "output_tokens": 21190,
+    "api_call_count": 22
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "prompt-skill-claude-code-arc-2026-11-11T12:06:12.25721Z",
+      "event_type": "prompt_invocation",
+      "skill": {
+        "name": "arc"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "prompt_slash_command",
+        "confidence": "explicit"
+      },
+      "turn_id": "98701ee0c32f",
+      "timestamp": "2026-11-11T12:06:12.25721Z",
+      "native": {
+        "command": "/arc"
+      },
+      "collapse": {
+        "target": "user_message",
+        "label": "/arc",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 9
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-11-11T12:56:29.066627Z",
+    "agent_lines": 84,
+    "agent_removed": 8,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 84,
+    "total_lines_changed": 92,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 12,
+      "agent_lines_removed": 7
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 12,
+      "agent_lines_removed": 7
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 21,
+      "agent_lines_removed": 8
+    },
+    {
+      "checkpoint_number": 5,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 27,
+      "agent_lines_removed": 8
+    },
+    {
+      "checkpoint_number": 6,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 54,
+      "agent_lines_removed": 8
+    },
+    {
+      "checkpoint_number": 7,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 66,
+      "agent_lines_removed": 8
+    }
+  ]
+}
